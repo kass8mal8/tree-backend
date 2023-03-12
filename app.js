@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const { json } = require('express')
 
-const MONGO_URI = "mongodb+srv://caseem:kassimali2001@cluster0.tyrwkwv.mongodb.net/TreeCover-app?retryWrites=true&w=majority"
+const { MONGO_URI } = process.env
 
 app.use(cors())
 app.use(json())
